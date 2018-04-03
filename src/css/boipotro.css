@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+*{
+	font-family: 'Poiret One', cursive;
+}
+
+body{
+	display: grid;
+	grid-template-rows: 1fr minmax(280px, auto) minmax(280px, auto);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+
+a:link{
+	color:rgb(203, 37, 89);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:visited{
+	color:rgb(26,176,139);
+	text-decoration: none;
+}
+a:hover{
+	border-bottom: 2px solid rgb(203, 37, 89);
+	border: 1px solid black;
+}
+
+.width100{
+	width: 100%;
+}
+
+.button{
+	border: 0px;
+	padding: 10px;
+	color: white;
+	font-weight: 700;
+	font-size: 1.3rem;
+	padding-bottom: 30px;
+}
+.button:hover{
+	background-color: rgb(26, 176, 139);
+}
+.buttonPrimary{
+	background-color: rgb(203, 37, 89);
+}
+.buttonSecondary{
+	background-color: rgb(26, 176, 139);
+}
+
+
+.box{
+	 box-shadow: 1px -1px 8px 2px rgba(0,0,0,.5);
+	 padding: 20px;
+	 border-radius: 6px;
+	 filter: grayscale(75%);
+}
+.box:hover{
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+
+.header{
+	grid-column: 1/5;
+	grid-row: 1/2;
+}
+
+.logo{
+	background: url('../resources/bookshanks.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 220px;
+	height: 120px;
+	float: left;
+	filter: grayscale(20%);
+}
+
+.nav{
+	float: right;
+	font-size: 1.5rem;
+}
+
+.nav ul li {
+	list-style: none;
+	width: 100px;
+	float: left;
+	padding-left: 50px;
+}
+
+.hero{
+	grid-column: 1/3;
+	grid-row: 2/4;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+.heroText{
+	text-align: center;
+	font-size: 2.4rem;
+	
+}
+.userAuth{
+	width: 450px;
+	height: auto;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 1.6rem;
+	box-shadow: 6px -1px 35px -4px rgba(0,0,0,0.6);
+}
+input{
+	height: 30px;
+	border-radius: 2px;
+	border: 0px;
+	padding-left: 20px;
+	font-size: 1.1rem;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.signupMessage{
+	font-size: 1rem;
+	text-align: center;
+}
+
+.book1{
+	grid-column: 3/4;
+	grid-row: 2/3;
+	background: url("../resources/bookCovers/obonil.jpg");
+	background-size: 100%;
+
+}
+.book2{
+	grid-column: 3/4;
+	grid-row: 3/4;	
+	background: url("../resources/bookCovers/ekattorerDinguli.jpg");
+	background-size: 100%;
+
+}
+.book3{
+	grid-column: 4/5;
+	grid-row: 3/4;
+	background: url("../resources/bookCovers/geetanjoli.jpg");
+	background-size: 100%;
+
+}
+.book4{
+	grid-column: 4/5;
+	grid-row: 2/3;
+	
+	background: url("../resources/bookCovers/shonarKella.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+
+
+
+
+
