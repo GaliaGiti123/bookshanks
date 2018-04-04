@@ -2,6 +2,7 @@
 
 *{
 	font-family: 'Poiret One', cursive;
+	outline: none;
 }
 
 body{
@@ -23,7 +24,6 @@ a:visited{
 }
 a:hover{
 	border-bottom: 2px solid rgb(203, 37, 89);
-	border: 1px solid black;
 }
 
 .width100{
