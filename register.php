@@ -11,40 +11,38 @@
 	<div class="userAuth" id="userAuth">
 
 
-<form action="registrationSuccess.php">
+<form action="registerFormHandler.php" method="post">
 	<label>Username</label>
 	<br>
-	<input class="width100" type="text">
+	<input class="width100" type="text" name="username">
 	<br>
 	<br>
 	<label>Password</label>
 	<br>
-	<input class="width100" type="password">
+	<input class="width100" type="password" name="userPassword">
 	
 	<br>
 	<br>
 	<label>Email</label>
 	<br>
-	<input class="width100" type="email">
+	<input class="width100" type="email" name="userEmail">
 	<br>
 
 	<br>
 	<label>Address</label>
 	<br>
-	<input class="width100" type="text">
+	<input class="width100" type="text" name="userAddress">
 	<br>
 	
 	<br>
 	<label>Phone</label>
 	<br>
-	<input class="width100" type="text">
+	<input class="width100" type="text" name="userPhone">
 	<br>
-	
-	
 	
 	<br>
 	<br>
-	<input class="button buttonPrimary width100" type="submit" value="Sign up!">
+	<input class="button buttonPrimary width100" type="submit" value="Sign up!" name="registerButton" >
 </form>
 <br>
 

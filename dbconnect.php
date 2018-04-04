@@ -3,13 +3,14 @@
     $dbuser = 'root';
     $dbpass = '';
     $dbName = 'bookshanks';
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbName);
 
     if(! $conn ){
        die('Could not connect: ' . mysqli_error());
     }
 
-    mysqli_select_db($conn, $dbName);
+#    mysqli_select_db($conn, $dbName);
 
+    
 
 ?>

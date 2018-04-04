@@ -1,14 +1,27 @@
-<?php include './header.php'?>
+<?php include './dbconnect.php'?>
+
+<?php
+    # jodi submit button ta clicked hoy, tahole:
+    # isset($_POST['registerButton']) = true hobey.
+
+    if(isset($_POST['registerButton']) == true ){
+        
+        $username = $_POST['username'];
+        $userPassword = $_POST['userPassword'];
+        $userEmail = $_POST['userEmail'];
+        $userAddress = $_POST['userAddress'];
+        $userPhone = $_POST['userPhone'];
 
 
-<div style="
-    grid-row: 2/3;
-    grid-column: 2/4;
-    text-align: center;
-    font-size: 3rem;
-">
-    <h1>Registration successful!</h1>
-</div>
+//        $sql = "INSERT into  users(user_name, user_email, user_password, user_address, user_phone) VALUES ('$username', '$userPassword', $userEmail, $userAddress, $userPhone)"
+        $sql = "INSERT INTO  users(user_name, user_password, user_email, user_address, user_phone) VALUES ('$username', '$userPassword', '$userEmail', '$userAddress', '$userPhone')";
 
 
 
+        mysqli_multi_query($conn,$sql);
+
+    }
+
+
+   
+?>
