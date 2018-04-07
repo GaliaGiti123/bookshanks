@@ -19,6 +19,8 @@
 
 
         mysqli_multi_query($conn,$sql);
+        header('Location: registrationSuccess.php');
+        
 
     }
 

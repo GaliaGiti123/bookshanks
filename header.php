@@ -6,6 +6,8 @@
 <head>
 	<title>BookWorm - An online bookshop</title>
 	<link rel="stylesheet" type="text/css" href="./src/css/boipotro.css">
+	<link rel="stylesheet" type="text/css" href="./books.css">
+	
 </head>
 
 <body>
@@ -14,12 +16,12 @@
 
 		<div class="nav">
 			<ul>
-				<li> <a href="#">Home</a></li>
-				<li><a href="#">Books</a></li>
-				<li><a href="#">Detail</a></li>
-				<li> <a href="#">About us</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Sign up</a></li>
+				<li> <a href="index.php">Home</a></li>
+				<li><a href="books.php">Books</a></li>
+				<li><a href="details.php">Details</a></li>
+				<li> <a href="aboutus.php">About us</a></li>
+				<li><a href="contact.php">Contact</a></li>
+				<li><a href="register.php">Sign up</a></li>
 				
 			</ul>
 		</div>
