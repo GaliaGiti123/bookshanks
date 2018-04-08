@@ -9,8 +9,4 @@
        die('Could not connect: ' . mysqli_error());
     }
 
-#    mysqli_select_db($conn, $dbName);
-
-    
-
 ?>

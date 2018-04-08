@@ -19,7 +19,10 @@
 
 
         mysqli_multi_query($conn,$sql);
-        header('Location: registrationSuccess.php');
+
+        //$_COOKIE['usernameCookie'] = $username;
+        
+        header('Location: books.php');
         
 
     }
