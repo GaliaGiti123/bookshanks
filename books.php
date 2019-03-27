@@ -59,10 +59,13 @@
             color: white; 
             font-size: 1.5rem;
             cursor: pointer;
+            padding: 20px;
+
         }
         .mainButton:hover{
             box-shadow: 0px 0px 20px 6px rgba(1, 2, 0, 0.5); 
             background-color: rgb(233, 121, 30);
+
         }
         .loginMessage{
             width: 100%;
@@ -93,19 +96,25 @@
             font-size: 1.3rem;
             padding: 20px;
         }
-        
+        form{
+        }
     </style>
 </head>
 
 <body>
 
 
+
         <div class="book"> 
             <div class="bookName"> <?php getBook(1)?> </div>
             <div class="authorName"><?php getAuthorName(1) ?></div>
             <div class="inStock"><?php getInStock(1)?> available</div>
+            <form action="./thanksforbuying.php">
+                <input type="submit" name="buyButton" class="mainButton" value="Buy">
+            </form>
             <div class="bookPrice"> <?php getSellingPrice(1)?> Tk</div>
-            <button class="mainButton" onclick="bringConfirmBuyBox()">Buy</button>
+
+
             <img src="<?php getBookCoverURL(1)?>" alt="">
         </div>
 
@@ -113,8 +122,12 @@
             <div class="bookName"> <?php getBook(2)?> </div>
             <div class="authorName"><?php getAuthorName(2) ?></div>
             <div class="inStock"><?php getInStock(2)?> available</div>
+            <form action="./thanksforbuying.php">
+                <input type="submit" name="buyButton" class="mainButton" value="Buy">
+            </form>
+            
             <div class="bookPrice"> <?php getSellingPrice(2)?> Tk</div>
-            <button class="mainButton" onclick="bringConfirmBuyBox()">Buy</button>
+            
             <img src="<?php getBookCoverURL(2)?>" alt="">
         </div>
 
